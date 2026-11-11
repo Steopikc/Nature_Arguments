@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговое сочинение: Природа и человек</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-label">Итоговое сочинение ЕГЭ</p>
+            <h1>Природа и человек</h1>
+            <p class="hero-subtitle">Раздел «Природа и культура в жизни человека» · Подраздел 3.1</p>
+            <nav class="hero-nav">
+                <a href="#concepts">Понятия</a>
+                <a href="#topics">Темы</a>
+                <a href="#works">Произведения</a>
+                <a href="#arguments">Аргументы</a>
+                <a href="#quotes">Цитаты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Понятия -->
+        <section id="concepts" class="section">
+            <div class="container">
+                <h2 class="section-title">Какие понятия рассматриваются в этом разделе?</h2>
+                <div class="concepts-grid">
+                    <article class="concept-card">
+                        <div class="concept-icon">🌿</div>
+                        <h3>Человек и природа</h3>
+                        <p>Взаимосвязь человека и окружающего мира. Человек — часть природы, а не её хозяин. Влияние природы на душу, характер и мировоззрение личности.</p>
+                    </article>
+                    <article class="concept-card">
+                        <div class="concept-icon">🏛</div>
+                        <h3>Природа и цивилизация</h3>
+                        <p>Конфликт или гармония технического прогресса и природного мира. Последствия потребительского отношения к ресурсам, экология, ответственность поколений.</p>
+                    </article>
+                    <article class="concept-card">
+                        <div class="concept-icon">💬</div>
+                        <h3>Человек и язык (смежный)</h3>
+                        <p>Хотя язык относится к подразделу 3.4, в контексте природы важно, как язык передаёт восприятие природы, сохраняет образы родной земли и формирует отношение к ней.</p>
+                    </article>
+                </div>
+                <div class="aspects-box">
+                    <h3>Ключевые аспекты направления</h3>
+                    <ul>
+                        <li>Взаимодействие человека и природы</li>
+                        <li>Отношение человека к природе (бережное / потребительское)</li>
+                        <li>Человек и природа как единое целое</li>
+                        <li>Влияние природы на внутренний мир человека</li>
+                        <li>Экологическая ответственность</li>
+                        <li>Конфликт природы и цивилизации</li>
+                        <li>Эстетическая и воспитательная ценность природы</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Темы -->
+        <section id="topics" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Примерные темы раздела</h2>
+                <p class="section-desc">Нажмите на интересующую тему: откроется окно с двумя литературными аргументами. Их можно прослушать и сохранить отдельным файлом для печати.</p>
+                <div class="topics-grid" id="topics-list">
+                    <!-- Заполняется из JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Произведения -->
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title">Список произведений</h2>
+                <p class="section-desc">Произведения, которые можно уверенно применять к темам раздела «Природа и человек».</p>
+                <div class="works-grid" id="works-list">
+                    <!-- Заполняется из JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Банк аргументов -->
+        <section id="arguments" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Банк аргументов</h2>
+                <p class="section-desc">
+                    Готовые литературные аргументы. Для каждого оставлено пустое поле озвучки — добавьте аудиофайл позже.
+                    <br><strong>Как добавлять новые:</strong> откройте файл <code>data.js</code> и допишите объект в массив <code>argumentsData</code>.
+                </p>
+                <div class="arguments-list" id="arguments-list">
+                    <!-- Банк аргументов доступен через выбранные темы -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Цитаты -->
+        <section id="quotes" class="section">
+            <div class="container">
+                <h2 class="section-title">Три идеальные цитаты</h2>
+                <p class="section-desc">Можно использовать как эпиграф или в заключении сочинения.</p>
+                <div class="quotes-grid">
+                    <blockquote class="quote-card">
+                        <p>«Охранять природу — значит охранять Родину.»</p>
+                        <cite>— М. М. Пришвин</cite>
+                    </blockquote>
+                    <blockquote class="quote-card">
+                        <p>«Кто не любит природы, тот не любит человека, тот не гражданин.»</p>
+                        <cite>— Ф. М. Достоевский</cite>
+                    </blockquote>
+                    <blockquote class="quote-card">
+                        <p>«Счастье — это быть с природой, видеть её, говорить с ней.»</p>
+                        <cite>— Л. Н. Толстой</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Проект по подготовке к итоговому сочинению · Раздел «Природа и человек»</p>
+            <p class="footer-note">Данные можно легко расширять через файл <code>data.js</code></p>
+        </div>
+    </footer>
+
+    <div class="topic-modal" id="topic-modal" hidden>
+        <section class="topic-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-topic-title">
+            <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть окно">×</button>
+            <p class="modal-eyebrow">Подборка аргументов</p>
+            <h2 id="modal-topic-title"></h2>
+            <div id="modal-arguments" class="modal-arguments"></div>
+            <div class="modal-actions">
+                <button class="primary-button" id="download-topic" type="button">↓ Сохранить тему и аргументы</button>
+                <span>Файл откроется в браузере и его можно будет распечатать.</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
